@@ -1,0 +1,21 @@
+{
+    "name": "openapi-annotations-snippets",
+    "displayName": "OpenApi Annotations Snippets",
+    "description": "Snippets to use with swagger-php and swagger-ui in php",
+    "publisher": "Dishant Pal",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}

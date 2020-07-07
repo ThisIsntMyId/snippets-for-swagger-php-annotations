@@ -1,0 +1,339 @@
+{
+	"OpenApi Info Annotation": {
+		"prefix": "oainf",
+		"body": [
+			" * @OA\\Info(\r",
+			" *   title=\"$1\",\r",
+			" *   description=\"$2\",\r",
+			" * )"
+		],
+		"description": "OpenApi Info Annotation"
+	},
+	"OpenApi Server Annotation": {
+		"prefix": "oasrvr",
+		"body": [
+			" * OA\\Server(\r",
+			" *   url=\"$1\",\r",
+			" *   description=\"$2\"\r",
+			" * )"
+		],
+		"description": "OpenApi Server Annotation"
+	},
+	"OpenApi Tag Annotation": {
+		"prefix": "oatg",
+		"body": [
+			" * @OA\\Tag(\r",
+			" *   name=\"$1\",\r",
+			" *   description=\"$2\",\r",
+			" *   @OA\\ExternalDocumentation(\r",
+			" *     description=\"$3\",\r",
+			" *     url=\"$4\"\r",
+			" *   )\r",
+			" * )"
+		],
+		"description": "OpenApi Tag Annotation"
+	},
+	"OpenApi Property Annotation": {
+		"prefix": "oapr",
+		"body": [
+			" * @OA\\Property(\r",
+			" *   property=\"$1\"\r",
+			" *   title=\"$2\",\r",
+			" *   type=\"$3\",\r",
+			" *   format=\"$4\",\r",
+			" *   description=\"$5\",\r",
+			" *   default=\"$6\",\r",
+			" *   required=${3|true,false|},\r",
+			" *   example=\"$7\"\r",
+			" * )"
+		],
+		"description": "OpenApi Property Annotation"
+	},
+	"OpenApi Property Annotation (Only title and description)": {
+		"prefix": "oaprtids",
+		"body": [
+			" * @OA\\Property(\r",
+			" *   title=\"$2\",\r",
+			" *   description=\"$5\",\r",
+			" * )"
+		],
+		"description": "OpenApi Property Annotation (Only title and description)"
+	},
+	"OpenApi Property Annotation Empty": {
+		"prefix": "oapre",
+		"body": [
+			" * @OA\\Property($1)"
+		],
+		"description": "OpenApi Property Annotation Empty"
+	},
+	"OpenApi Property Annotation (only String type)": {
+		"prefix": "oaprstr",
+		"body": [
+			" * @OA\\Property(type=\"string\")"
+		],
+		"description": "OpenApi Property Annotation (only String type)"
+	},
+	"OpenApi Property Annotation (only property name and type)": {
+		"prefix": "oaprsmpl",
+		"body": [
+			" * @OA\\Property(property=\"$1\", type=\"$2\")"
+		],
+		"description": "OpenApi Property Annotation (only property name and type)"
+	},
+	"OpenApi Property Annotation with ref": {
+		"prefix": "oaprref",
+		"body": [
+			" * @OA\\Property(property=\"$1\", ref=\"$2\")"
+		],
+		"description": "OpenApi Property Annotation with ref"
+	},
+	"OpenApi Parameter Annotation": {
+		"prefix": "oaprm",
+		"body": [
+			" * @OA\\Parameter(\r",
+			" *   name=\"$1\",\r",
+			" *   in=\"${2|query,path,header,cookie|}\",\r",
+			" *   required=${3|true,false|},\r",
+			" *   deprecated=${4|true,false|},\r",
+			" *   description=\"$5\",\r",
+			" *   $6\r",
+			" * )"
+		],
+		"description": "OpenApi Parameter Annotation"
+	},
+	"OpenApi Xml Annotation": {
+		"prefix": "oaxml",
+		"body": [
+			" * @OA\\Xml(\r",
+			" *   name=\"$1\",\r",
+			" *   wrapped=$2\r",
+			" * )"
+		],
+		"description": "OpenApi Xml Annotation"
+	},
+	"OpenApi Items Annotation": {
+		"prefix": "oaitm",
+		"body": [
+			" * @OA\\Items(\r",
+			" *    type=\"$1\",\r",
+			" *    default=\"$2\"\r",
+			" * )"
+		],
+		"description": "OpenApi Items Annotation"
+	},
+	"OpenApi Empty Items Annotation": {
+		"prefix": "oaitme",
+		"body": [
+			" * @OA\\Items($1)"
+		],
+		"description": "OpenApi Empty Items Annotation"
+	},
+	"OpenApi Items Annotation with ref": {
+		"prefix": "oaitmref",
+		"body": [
+			" * @OA\\Items(ref=\"$1\")"
+		],
+		"description": "OpenApi Items Annotation with ref"
+	},
+	"OpenApi Header Annotation": {
+		"prefix": "oahdr",
+		"body": [
+			" * @OA\\Header(header=\"$1\", description=\"$2\", @OA\\Schema(type=\"$3\"), $4)"
+		],
+		"description": "OpenApi Header Annotation"
+	},
+	"OpenApi JsonContentType Annotation empty": {
+		"prefix": "oajse",
+		"body": [
+			" * @OA\\JsonContent($1)"
+		],
+		"description": "OpenApi JsonContentType Annotation empty"
+	},
+	"OpenApi JsonContentType Annotation with refs": {
+		"prefix": "oajsref",
+		"body": [
+			" * @OA\\JsonContent(ref=\"$1\")"
+		],
+		"description": "OpenApi JsonContentType Annotation with refs"
+	},
+	"OpenApi Mediatype Annotation": {
+		"prefix": "oamt",
+		"body": [
+			" * @OA\\MediaType(\r",
+			" *   mediaType=\"$1\",\r",
+			" *   @OA\\Schema($2),\r",
+			" * )"
+		],
+		"description": "OpenApi Mediatype Annotation"
+	},
+	"OpenApi Schema Annotation": {
+		"prefix": "oas",
+		"body": [
+			" * @OA\\Schema(\r",
+			" *   title=\"$1\",\r",
+			" *   description=\"$2\",\r",
+			" *   schema=\"$3\",\r",
+			" *   required={$4}\r",
+			" *   type=\"$5\",\r",
+			" *   format=\"$6\"\r",
+			" * )"
+		],
+		"description": "OpenApi Schema Annotation"
+	},
+	"OpenApi Schema Annotation empty": {
+		"prefix": "oase",
+		"body": [
+			" * @OA\\Schema($1)"
+		],
+		"description": "OpenApi Schema Annotation empty"
+	},
+	"OpenApi Schema Annotation (only type and format)": {
+		"prefix": "oastyfr",
+		"body": [
+			" * @OA\\Schema(\r",
+			" *   type=\"$1\",\r",
+			" *   format=\"$2\"\r",
+			" * )"
+		],
+		"description": "OpenApi Schema Annotation (only type and format)"
+	},
+	"OpenApi Schema Annotation (only title and description)": {
+		"prefix": "oastids",
+		"body": [
+			" * @OA\\Schema(\r",
+			" *   title=\"$1\",\r",
+			" *   description=\"$2\",\r",
+			" * )"
+		],
+		"description": "OpenApi Schema Annotation (only title and description)"
+	},
+	"OpenApi Schema Annotation (only schema name)": {
+		"prefix": "oass",
+		"body": [
+			" * @OA\\Schema(schema=\"$1\")"
+		],
+		"description": "OpenApi Schema Annotation (only schema name)"
+	},
+	"OpenApi Schema Annotation with XML name": {
+		"prefix": "oasx",
+		"body": [
+			" * @OA\\Schema(@OA\\Xml(name=\"$1\"))"
+		],
+		"description": "OpenApi Schema Annotation with XML name"
+	},
+	"OpenApi RequestBody Annotation": {
+		"prefix": "oareqbd",
+		"body": [
+			" * @OA\\RequestBody(\r",
+			" *   request=\"$1\",\r",
+			" *   description=\"$2\",\r",
+			" *   required=${3|true,false|},\r",
+			" *   $4\r",
+			" * )"
+		],
+		"description": "OpenApi RequestBody Annotation"
+	},
+	"OpenApi Response Annotation": {
+		"prefix": "oares",
+		"body": [
+			" * @OA\\Response(\r",
+			" *   response=$1,\r",
+			" *   description=\"$2\",\r",
+			" *   $3\r",
+			" * ),"
+		],
+		"description": "OpenApi Response Annotation"
+	},
+	"OpenApi get request annotation": {
+		"prefix": "oaget",
+		"body": [
+			" * @OA\\Get(\r",
+			" *   path=\"$1\",\r",
+			" *   tags={\"$2\"},\r",
+			" *   summary=\"$3\",\r",
+			" *   description=\"$4\",\r",
+			" *   operationId=\"$5\",\r",
+			" *   @OA\\Response(\r",
+			" *     response=200,\r",
+			" *     description=\"$6\",\r",
+			" *   ),\r",
+			" *   @OA\\Response(\r",
+			" *     response=400,\r",
+			" *     description=\"$7\"\r",
+			" *   ),\r",
+			" *   $8\r",
+			" * )"
+		],
+		"description": "OpenApi get request annotation"
+	},
+	"OpenApi Post Request Annotation": {
+		"prefix": "oapost",
+		"body": [
+			" * @OA\\Post(\r",
+			" *   path=\"$1\",\r",
+			" *   tags={\"$2\"},\r",
+			" *   summary=\"$3\",\r",
+			" *   operationId=\"$4\",\r",
+			" *   @OA\\Response(\r",
+			" *     response=405,\r",
+			" *     description=\"${5:Invalid input}\"\r",
+			" *   ),\r",
+			" *   $6\r",
+			" * )"
+		],
+		"description": "OpenApi Post Request Annotation"
+	},
+	"OpenApi Delete  request annotation": {
+		"prefix": "oadel",
+		"body": [
+			" * @OA\\Delete(\r",
+			" *   path=\"$1\",\r",
+			" *   tags={\"$2\"$3},\r",
+			" *   summary=\"$4\",\r",
+			" *   operationId=\"$5\",\r",
+			" *   $6\r",
+			" *   @OA\\Response(\r",
+			" *       response=400,\r",
+			" *       description=\"$7\",\r",
+			" *   ),\r",
+			" *   @OA\\Response(\r",
+			" *       response=404,\r",
+			" *       description=\"$8\",\r",
+			" *   ),\r",
+			" *   $8\r",
+			" * )"
+		],
+		"description": "OpenApi Delete  request annotation"
+	},
+	"OpenApi Delete by id request annotation": {
+		"prefix": "oadelbyid",
+		"body": [
+			" * @OA\\Delete(\r",
+			" *   path=\"$1\",\r",
+			" *   tags={\"$2\"$3},\r",
+			" *   summary=\"$4\",\r",
+			" *   operationId=\"$5\",\r",
+			" *   @OA\\Parameter(\r",
+			" *     name=\"$6\",\r",
+			" *     in=\"${7:path}\",\r",
+			" *     description=\"$8\",\r",
+			" *     required=${9|true,false|},\r",
+			" *     @OA\\Schema(\r",
+			" *       type=\"integer\",\r",
+			" *       format=\"int64\"\r",
+			" *     ),\r",
+			" *   ),\r",
+			" *   @OA\\Response(\r",
+			" *       response=400,\r",
+			" *       description=\"$10\",\r",
+			" *   ),\r",
+			" *   @OA\\Response(\r",
+			" *       response=404,\r",
+			" *       description=\"$11\",\r",
+			" *   ),\r",
+			" *   $12\r",
+			" * )"
+		],
+		"description": "OpenApi Delete by id request annotation"
+	}
+}
